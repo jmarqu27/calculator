@@ -1,119 +1,151 @@
 .calculator {
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    background-color: silver;
-    border: grey;
+    border-radius: 10px;
+    background-color: black;
     padding: 10px;
-    height: 500px;
-    width: 500px;
+    height: 425px;
+    width: 300px;
+    margin: auto;
 }
 
 .screen {
     grid-column: 1 / span 5;
     grid-row: 1;
+    height: 100px;
     padding: 10px;
+    color: white;
+    text-align: right;
+    font-size: 50px;
 }
 
 .number-pad-grid {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 25% 25% 25% 25%;
-    column-gap: 2px;
-    row-gap: 2px;
-    border: 2px silver solid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    /* column-gap: 2px; */
+    /* row-gap: 2px; */
+}
+
+.operator {
+    background-color: #e1b382;
+    border-color: black;
+    color: white;
 }
 
 button {
-    background-color: black;
+    background-color: #2d545e;
     font-size: 30px;
     width: 75px;
     height: 60px;
-    color: silver;
-    border-radius: 5px;
+    color: white;
+    border-radius: 30px;
     border: 2px black solid;
 }
 
 .clear {
     grid-column: 1;
-    grid-row: 4 / span 1;
+    grid-row: 1 / span 1;
+    margin: auto;
+}
+
+#division-button {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    margin: auto;
 }
 
 .seven {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin: auto;
 }
 
 .eight {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    margin: auto;
 }
 
 .nine {
-    grid-column: 4 / span 1;
-    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    margin: auto;
 }
 
-.division {
-    grid-column: 5 / span 1;
-    grid-row: 1 / span 1;
+#multiply-button {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+    margin: auto;
 }
 
 .four {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    margin: auto;
 }
 
 .five {
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    margin: auto;
 }
 
 .six {
-    grid-column: 4 / span 1;
-    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    margin: auto;
 }
 
-.multiply {
-    grid-column: 5 / span 1;
-    grid-row: 2 / span 1;
+#subtract-button {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    margin: auto;
 }
 
 .one {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    margin: auto;
 }
 
 .two {
-    grid-column: 3 / span 1;
-    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+    margin: auto;
 }
 
 .three {
-    grid-column: 4 / span 1;
-    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+    margin: auto;
 }
 
-.subtract {
-    grid-column: 5 / span 1;
-    grid-row: 3 / span 1;
+#add-button {
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+    margin: auto;
 }
 
 .zero {
-    grid-column: 2 / span 1;
-    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+    margin: auto;
 }
 
 .decimal {
     grid-column: 3 / span 1;
-    grid-row: 4 / span 1;
+    grid-row: 5 / span 1;
+    margin: auto;
 }
 
 .equal {
     grid-column: 4 / span 1;
-    grid-row: 4 / span 1;
+    grid-row: 5 / span 1;
+    margin: auto;
 }
 
-.add {
-    grid-column: 5 / span 1;
-    grid-row: 4 / span 1;
+#zero-button {
+    border-radius: 30px;
+    width: 150px;
 }
